@@ -1,5 +1,13 @@
 import fs from 'node:fs'
 
+/**
+ * Creates the output directory and loads the cover letter template 
+ * into a string.
+ *
+ * @param   {string} templatePath - path to the template file
+ * @param   {string} outputDir - path to the output directory
+ * @returns {string} text - the text in the template file
+ */
 export default function setUp(templatePath, outputDir) {
 
   // Make sure output directory exists
