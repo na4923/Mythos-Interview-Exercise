@@ -14,7 +14,7 @@ A modular Node.js command-line tool that parses CSV data and generates dynamic, 
     npm install
 ```
 ## Usage
-Place your target CSV file in the `data/` directory. A sample file (`sample.csv`) is included for testing.
+Place your target CSV file in the `./data` directory. A sample file (`sample.csv`) is included for testing.
 
 Run the script from the root directory:
 ```bash
@@ -23,7 +23,7 @@ Run the script from the root directory:
     # To run with a specific dataset
     node src/index.js your_custom_file.csv
 ```
-The generated PDFs will automatically be saved to the `/output` directory.
+The generated PDFs will automatically be saved to the `./output` directory.
 
 ## Assumptions and Considerations
 There must be a template.txt file in the root folder. A sample one has been included.
