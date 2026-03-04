@@ -1,0 +1,23 @@
+{
+  "name": "mythos-cover-letters",
+  "version": "1.0.0",
+  "description": "Given the provided CSV file, and using PDFKit, create a program that will generate a cover letter addressed to each company in the CSV.",
+  "homepage": "https://github.com/na4923/Mythos-Interview-Exercise#readme",
+  "bugs": {
+    "url": "https://github.com/na4923/Mythos-Interview-Exercise/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/na4923/Mythos-Interview-Exercise.git"
+  },
+  "license": "ISC",
+  "author": "Nicolas Alonso Castillo",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "pdfkit": "^0.17.2"
+  }
+}
