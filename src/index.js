@@ -1,9 +1,17 @@
-const fs = require('node:fs/promises');
-const path = require('node:path');
+import CSVParser from './csvparser.js'
+import PDFGenerator from './generator.js'
+import SetUp from './setup.js'
 
-const filename = "data/" + process.argv[2];
+const filePath = "./data/" + (process.argv[2] || "leads.csv");
+const templatePath = "./template.txt";
+const outputDir = "./output";
 
-export default async function make_cover_letters(filename) {
+async function makeCoverLetters(targetFile) {
+  const template = SetUp(templatePath, outputDir)
+  const parsedData = await CSVParser(targetFile)
 
+  parsedData.data.forEach(row => {
+    PDFGenerator(row, template, outputDir)
+  });
 }
-make_cover_letters(filename)
+makeCoverLetters(filePath)

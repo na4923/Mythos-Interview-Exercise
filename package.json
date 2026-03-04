@@ -12,12 +12,13 @@
   },
   "license": "ISC",
   "author": "Nicolas Alonso Castillo",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "papaparse": "^5.5.3",
     "pdfkit": "^0.17.2"
   }
 }
