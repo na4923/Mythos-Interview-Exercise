@@ -27,7 +27,7 @@ The generated PDFs will automatically be saved to the `./output` directory.
 
 ## Assumptions and Considerations
 * There must be a template.txt file in the root folder. A sample one has been included.
+* The program automatically creates a ./output folder for the .pdf files.
 * Company name must be one of the columns in the .csv file. It must be titled 'company'. 
 * Any number of columns can be added as long as they have a matching field in template.txt. Otherwise they will be ignored. They should be in the following format: [column-name]
 
-The program automatically creates a ./output folder for the .pdf files.
